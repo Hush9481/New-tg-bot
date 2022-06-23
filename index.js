@@ -3,7 +3,7 @@ const { Telegraf, Markup } = require('telegraf')
 const axios = require('axios')
 const cc = require('currency-codes');
 require('dotenv').config()//1
-const bot = new Telegraf(process.env.BOT_TOKEN)
+const bot = new Telegraf('5408260189:AAGZj2StjpUnO5U8ArM5rkApBCXZ1P7Oc7Q')
 bot.start((ctx) => ctx.reply(`Привіт ${ctx.message.from.first_name, 'Я чат-бот створенний щоб показувати курс валют на данний момент'}`))
 bot.help((ctx) => ctx.reply('Пропишіть команду /what'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
